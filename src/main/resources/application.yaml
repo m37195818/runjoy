@@ -1,0 +1,16 @@
+server:
+  port: 8083
+
+student:
+  age: 12
+  date: 2019/10/29
+  teacher:
+    name: xiaodu
+    age: 18
+  map: {k1: v1,k2: v2}
+  list:
+    - haha
+    - heihei
+  name: zhangsan
+  boos: false
+

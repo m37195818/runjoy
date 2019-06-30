@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--转义-->
+<div th:text="${hello}">成功！</div>
+<!--不转义-->
+<div th:utext="${hello}">成功！</div>
+<!--遍历数组-->
+<h4 th:text="${arr}" th:each="arr : ${array}"></h4>
+<!--行内写法[[]]表示text，[()]表示utext-->
+<h3>
+    <span th:each="arr : ${array}">[[${arr}]]</span>
+</h3>
+</body>
+</html>
